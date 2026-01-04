@@ -16,6 +16,12 @@ npm run dev
 # open http://localhost:3000
 ```
 
+If your npm registry blocks older versions, the project now targets the latest patched Next.js 15.x toolchain to avoid the 14.x security advisory. If you still see registry or proxy errors, retry with:
+
+```bash
+npm install --registry=https://registry.npmjs.org
+```
+
 ## Configuration
 Environment variables (optional):
 - `NEXT_PUBLIC_GAMMA_BASE` (default `https://gamma-api.polymarket.com`)
